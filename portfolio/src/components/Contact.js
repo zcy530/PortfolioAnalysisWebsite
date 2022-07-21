@@ -55,7 +55,7 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-            <TrackVisibility>
+            {/* <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
@@ -86,7 +86,7 @@ export const Contact = () => {
                   </Row>
                 </form>
               </div>}
-            </TrackVisibility>
+            </TrackVisibility> */}
           </Col>
         </Row>
       </Container>

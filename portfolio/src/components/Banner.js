@@ -57,7 +57,9 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome, we're team 10</span>
                 <h1>{`Portfolio Analysis Website, `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "with BL model", "based on ML-optimized"]'><span className="wrap">{text}</span></span></h1>
-                  <p>How to better your portfolio selection? This is an algo-trading system based on ML-optimized Black-Litterman Model <br /> <br /> Zhang Caiyi, Yang Lin</p>
+                  <p>How to better your portfolio selection? This is an algo-trading system based on ML-optimized Black-Litterman Model</p> 
+                  <br/> <br/> 
+                  <p style={{color: 'pink'}}> Yan Zhongwen, Zhang Caiyi <br/>Tang Zimeng, Zhu Zikang</p>
                   <button onClick={() => console.log('connect')}>Let’s go <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

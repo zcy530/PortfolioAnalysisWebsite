@@ -36,7 +36,13 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Intro To Our Project</h2>
-                        <p>How to better your portfolio selection? This is an algo-trading system based on ML-optimized Black-Litterman Model. <br/>  Github link: </p>
+                        <p>Diversification is the most important component of reaching long-range financial goals while minimizing risk, Meanwhile, the expected return, as the ultimate goal of investment, cannot be ignored when we try to avoid the risk. Therefore, we really need an effective model to weight risk against expected return, which requires us to reasonably allocate the weights of different investment targets.
+                          <br/><br/><b>“Allocate the weights”</b>, this is the core goal of our project.
+                          Combining an elaborate machine learning algorithm and black-litterman model, we better the Modern Portfolio Theory for the second time, and finally generate a brand-new tool to help investors to allocate the weights on a given risk appearance.
+                          
+                           
+                           <br/><br/>  Github link: https://github.com/zcy530/PortfolioAnalysisWebsite</p>
+                        
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={caiyi} alt="Image" />
