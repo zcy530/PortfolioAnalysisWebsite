@@ -1,10 +1,11 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
+import caiyi from "../assets/img/caiyizhang.jpg";
+import zimeng from "../assets/img/zimengtang.jpg";
+import ziyi from "../assets/img/ziyi.jpg";
+import zhongwen from "../assets/img/zhongwenyan.jpg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -16,7 +17,7 @@ export const Skills = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 4
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -34,24 +35,24 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h2>Intro To Our Project</h2>
+                        <p>How to better your portfolio selection? This is an algo-trading system based on ML-optimized Black-Litterman Model. <br/>  Github link: </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={caiyi} alt="Image" />
+                                <h5>Zhang Caiyi</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={zimeng} alt="Image" />
+                                <h5>Tang Zimeng</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={ziyi} alt="Image" />
+                                <h5>Zhu Zikang</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={zhongwen} alt="Image" />
+                                <h5>Yan Zhongwen</h5>
                             </div>
                         </Carousel>
                     </div>
