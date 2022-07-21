@@ -489,7 +489,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
@@ -616,4 +616,92 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+
+/* QUESTION/TIMER/LEFT SECTION */
+.app {
+  margin:auto;
+  margin-top:100px;
+  margin-bottom:70px;
+  background-color: #000000;
+  text-align: center;
+  width: 600px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+
+.question-section {
+  width: 100%;
+  margin-right:40px;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 30px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qbutton {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #8189a7;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0px solid #234668;
+  cursor: pointer;
+  text-align: center;
+}
+
+.qbutton:hover {
+  background-color: #1a2341;
+}
+
+.qbutton:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
 }
