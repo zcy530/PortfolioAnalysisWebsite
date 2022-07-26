@@ -800,3 +800,109 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 button svg {
   margin-right: 5px;
 }
+
+/* TODO */
+
+.taskBg {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 28px;
+  position: relative;
+}
+
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+
+.taskNumber {
+  color: rgba(236, 236, 236, 0.881);
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 50%;
+  width: 30px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskBg .taskText {
+  flex: 1;
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: #f7f5f9;
+}
+
+.taskBg .iconsWrap span:hover {
+  color: rgb(56, 17, 148);
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.todolist form input{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 25px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.todolist form input:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.todolist form input::placeholder {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+.todolist form input:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+
+.todolist form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 0px 0px;
+  font-size: 18px;
+  margin-top: 0px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  border: 0px;
+}

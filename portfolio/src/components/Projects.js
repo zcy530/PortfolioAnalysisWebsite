@@ -7,6 +7,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import React, { useState } from 'react';
 import TrackVisibility from 'react-on-screen';
+import TodoList from './TodoList'
 
 export const Projects = () => {
 
@@ -32,7 +33,7 @@ export const Projects = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("url here", {
+    let response = await fetch("http://127.0.0.1:8888", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -170,7 +171,7 @@ export const Projects = () => {
                           <>
                             <div className='question-section'>
                               <div className='question-count'>
-                                <span>Question {currentQuestion + 1}</span>/{questions.length}
+                                <span>Question {currentQuestion + 1}</span>/18
                   
                               </div>
 
@@ -215,7 +216,7 @@ export const Projects = () => {
                             <input type="tel" value={formDetails.phone} placeholder="Max Lookback Year" onChange={(e) => onFormUpdate('phone', e.target.value)}/>
                           </Col>
                           <Col size={12} className="px-1">
-                            <textarea rows="6" value={formDetails.message} placeholder="Other..." onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                            <TodoList />
                             <button type="submit"><span>{buttonText}</span></button>
                           </Col>
                           {
@@ -226,7 +227,10 @@ export const Projects = () => {
                           }
                         </Row>
                       </form>
+                      
                       </div>
+
+                      
 
                     </Tab.Pane>
                     
